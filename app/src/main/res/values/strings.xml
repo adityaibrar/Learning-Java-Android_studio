@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">pertemuan1</string>
+    <string-array name="country">
+        <item>Indonesia</item>
+        <item>Arab Saudi</item>
+        <item>Singapore</item>
+        <item>Israel</item>
+        <item>Palestine</item>
+        <item>Qatar</item>
+        <item>Portugal</item>
+    </string-array>
+
+    <string-array name="jenis_kelamin">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
