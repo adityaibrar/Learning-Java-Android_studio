@@ -22,6 +22,7 @@ public class FragmentsActivity extends AppCompatActivity implements BottomNaviga
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragments);
         botNavFood = findViewById(R.id.navigation);
+        getSupportActionBar().hide();
         botNavFood.setOnItemSelectedListener(this);
         botNavFood.setSelectedItemId(R.id.food_nav);
     }
@@ -35,13 +36,13 @@ public class FragmentsActivity extends AppCompatActivity implements BottomNaviga
         switch (item.getItemId()){
             case R.id.food_nav:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, foodFragment).commit();
-                break;
+                return true;
             case R.id.beverage_nav:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, beverageFragment).commit();
-                break;
+                return true;
             case R.id.extra_food_nav:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, extraFragment).commit();
-                break;
+                return true;
         }
         return false;
     }

@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.pertemuan1.adapter.MahasiswaAdapter;
+import com.example.pertemuan1.model.Mahasiswa;
+
 import java.util.ArrayList;
 
 public class RecycleActivity extends AppCompatActivity {
@@ -29,10 +32,25 @@ public class RecycleActivity extends AppCompatActivity {
 
     void addData() {
         mahasiswaArrayList = new ArrayList<>();
-        mahasiswaArrayList.add(new Mahasiswa("Aditya Ibrar Abdillah", "E41210172", "085230258986"));
-        mahasiswaArrayList.add(new Mahasiswa("Amelia Fawwaz Zain", "E41211978", "085226285326"));
-        mahasiswaArrayList.add(new Mahasiswa("Deo Andreas Syaputra", "E41212022", "085572820852"));
-        mahasiswaArrayList.add(new Mahasiswa("Muhammad Rayhan", "E41211999", "085486119856"));
-        mahasiswaArrayList.add(new Mahasiswa("Restu Aji Prasetyo Saputra", "E41210002", "085238458192"));
+        mahasiswaArrayList.add(new Mahasiswa("Aditya Ibrar Abdillah", "E41210172", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Aditya Ibrar Abdillah", "E41210172", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Aditya Ibrar Abdillah", "E41210172", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Aditya Ibrar Abdillah", "E41210172", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Amelia Fawwaz Zain", "E41211978", "Pasuruan"));
+        mahasiswaArrayList.add(new Mahasiswa("Amelia Fawwaz Zain", "E41211978", "Pasuruan"));
+        mahasiswaArrayList.add(new Mahasiswa("Amelia Fawwaz Zain", "E41211978", "Pasuruan"));
+        mahasiswaArrayList.add(new Mahasiswa("Amelia Fawwaz Zain", "E41211978", "Pasuruan"));
+        mahasiswaArrayList.add(new Mahasiswa("Deo Andreas Syaputra", "E41212022", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Deo Andreas Syaputra", "E41212022", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Deo Andreas Syaputra", "E41212022", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Deo Andreas Syaputra", "E41212022", "Bondowoso"));
+        mahasiswaArrayList.add(new Mahasiswa("Muhammad Rayhan", "E41211999", "Jember"));
+        mahasiswaArrayList.add(new Mahasiswa("Muhammad Rayhan", "E41211999", "Jember"));
+        mahasiswaArrayList.add(new Mahasiswa("Muhammad Rayhan", "E41211999", "Jember"));
+        mahasiswaArrayList.add(new Mahasiswa("Muhammad Rayhan", "E41211999", "Jember"));
+        mahasiswaArrayList.add(new Mahasiswa("Restu Aji Prasetyo Saputra", "E41210002", "Banyuwangi"));
+        mahasiswaArrayList.add(new Mahasiswa("Restu Aji Prasetyo Saputra", "E41210002", "Banyuwangi"));
+        mahasiswaArrayList.add(new Mahasiswa("Restu Aji Prasetyo Saputra", "E41210002", "Banyuwangi"));
+        mahasiswaArrayList.add(new Mahasiswa("Restu Aji Prasetyo Saputra", "E41210002", "Banyuwangi"));
     }
 }

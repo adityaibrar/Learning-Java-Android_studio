@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-     Button bio,lv,frag,reg,rv;
+     Button bio,lv,frag,reg,rv, inte;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        setTitle("Praktikum Mobile");
         bio = findViewById(R.id.btn_bio);
         bio.setOnClickListener(this);
         lv = findViewById(R.id.btn_lv);
@@ -24,6 +25,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         rv.setOnClickListener(this);
         frag = findViewById(R.id.btn_frag);
         frag.setOnClickListener(this);
+        inte = findViewById(R.id.btn_intn);
+        inte.setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +46,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_frag:
                 startActivity(new Intent(this, FragmentsActivity.class));
+                break;
+            case R.id.btn_intn:
+                startActivity(new Intent(this, IntentActivity.class));
                 break;
         }
     }

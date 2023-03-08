@@ -1,12 +1,12 @@
-package com.example.pertemuan1;
+package com.example.pertemuan1.model;
 
 public class Mahasiswa {
-    private String nama, nim, noHp;
+    private String nama, nim, alamat;
 
-    public Mahasiswa(String nama, String nim, String nohp){
+    public Mahasiswa(String nama, String nim, String alamat){
         this.nama = nama;
         this.nim = nim;
-        this.noHp = nohp;
+        this.alamat = alamat;
     }
 
     public String getNama(){
@@ -26,10 +26,10 @@ public class Mahasiswa {
     }
 
     public String getNoHp() {
-        return noHp;
+        return alamat;
     }
 
     public void setNoHp(String noHp) {
-        this.noHp = noHp;
+        this.alamat = alamat;
     }
 }

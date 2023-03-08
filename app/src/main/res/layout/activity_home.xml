@@ -54,4 +54,14 @@
         app:layout_constraintStart_toStartOf="@+id/btn_reg"
         app:layout_constraintTop_toBottomOf="@+id/btn_reg" />
 
+    <Button
+        android:id="@+id/btn_intn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="56dp"
+        android:text="Intent"
+        app:layout_constraintStart_toEndOf="@+id/btn_frag"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recyc" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
