@@ -3,26 +3,24 @@ package com.example.pertemuan1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.example.pertemuan1.fragment.BeverageFragment;
 import com.example.pertemuan1.fragment.ExtraFragment;
 import com.example.pertemuan1.fragment.FastFoodFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class FragmentsActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class BottomNavActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView botNavFood;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragments);
+        setContentView(R.layout.activity_bottomnav);
+        setTitle("Fragments Activity");
         botNavFood = findViewById(R.id.navigation);
-        getSupportActionBar().hide();
         botNavFood.setOnItemSelectedListener(this);
         botNavFood.setSelectedItemId(R.id.food_nav);
     }

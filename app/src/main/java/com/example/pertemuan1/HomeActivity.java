@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-     Button bio,lv,frag,reg,rv, inte;
+     Button bio,lv,frag,reg,rv, inte, cmr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         frag.setOnClickListener(this);
         inte = findViewById(R.id.btn_intn);
         inte.setOnClickListener(this);
+        cmr = findViewById(R.id.btn_camera);
+        cmr.setOnClickListener(this);
     }
 
     @Override
@@ -45,10 +47,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, RecycleActivity.class));
                 break;
             case R.id.btn_frag:
-                startActivity(new Intent(this, FragmentsActivity.class));
+                startActivity(new Intent(this, BottomNavActivity.class));
                 break;
             case R.id.btn_intn:
                 startActivity(new Intent(this, IntentActivity.class));
+                break;
+            case R.id.btn_camera:
+                startActivity(new Intent(this, CameraActivity.class));
                 break;
         }
     }

@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.pertemuan1.R;
 
@@ -25,6 +28,8 @@ public class ExtraFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private TextView txtExtraFood;
+    private Button btn_frag;
 
     public ExtraFragment() {
         // Required empty public constructor
@@ -61,6 +66,17 @@ public class ExtraFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_extra, container, false);
+        View view = inflater.inflate(R.layout.fragment_extra, container, false);
+        txtExtraFood = view.findViewById(R.id.txt_extra_food);
+        txtExtraFood.setText("Enak sekali");
+        btn_frag = view.findViewById(R.id.btn_extrafrag);
+        btn_frag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Tombol Extra Fragment", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        return view;
     }
 }
