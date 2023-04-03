@@ -7,24 +7,19 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+
 import java.io.OutputStream;
 
 public class CameraActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,7 +27,6 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
     private ImageView imgCaptureResult;
     private Button btnOpnCam, btnSvimg;
     private final int CAMERA_REQUEST_CODE = 400;
-    private final int WRITE_STORAGE_REQUEST_CODE = 401;
     private final int REQUEST_SAVE_IMAGE = 200;
     private OutputStream outputStream;
 
@@ -107,7 +101,8 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
             Intent intent = new Intent(Intent.ACTION_CREATE_DOCUMENT);
             intent.addCategory(Intent.CATEGORY_OPENABLE);
             intent.setType("image/jpeg");
-            intent.putExtra(Intent.EXTRA_TITLE, "gambar.jpg");
+            String ImageName = "prtmn1" + System.currentTimeMillis() + ".JPG";
+            intent.putExtra(Intent.EXTRA_TITLE, ImageName);
             startActivityForResult(intent, REQUEST_SAVE_IMAGE);
         }
     }
