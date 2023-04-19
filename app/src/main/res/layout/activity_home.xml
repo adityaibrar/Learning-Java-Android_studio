@@ -86,4 +86,15 @@
         app:layout_constraintStart_toStartOf="@+id/btn_frag"
         app:layout_constraintTop_toBottomOf="@+id/btn_frag" />
 
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="@+id/btn_frag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_camera"
+        app:layout_constraintTop_toBottomOf="@+id/btn_camera" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
